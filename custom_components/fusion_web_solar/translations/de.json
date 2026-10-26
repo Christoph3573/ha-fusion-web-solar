@@ -1,0 +1,62 @@
+{
+  "config": {
+    "flow_title": "Fusion Web Solar",
+    "step": {
+      "user": {
+        "title": "Fusion Web Solar einrichten",
+        "description": "Wie soll sich die Integration an der FusionSolar-Weboberflaeche anmelden?",
+        "menu_options": {
+          "password": "Mit E-Mail und Passwort",
+          "cookies": "Mit Browser-Cookies"
+        }
+      },
+      "password": {
+        "title": "Anmeldung",
+        "description": "Zugangsdaten deines FusionSolar-Kontos.",
+        "data": {
+          "base_url": "Server-URL",
+          "email": "E-Mail",
+          "password": "Passwort"
+        }
+      },
+      "cookies": {
+        "title": "Browser-Cookies",
+        "description": "Cookie-Header aus den DevTools des Browsers (F12 -> Netzwerk -> Anfrage an fusionsolar.huawei.com). Cookies laufen nach einigen Stunden ab.",
+        "data": {
+          "base_url": "Server-URL",
+          "cookies": "Cookies"
+        }
+      },
+      "station": {
+        "title": "Anlage waehlen",
+        "description": "Das Konto enthaelt mehrere Anlagen.",
+        "data": {
+          "station_dn": "Anlage"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Anmeldung fehlgeschlagen. Bitte Zugangsdaten bzw. Cookies pruefen.",
+      "captcha_required": "FusionSolar verlangt einen Sicherheitscode. Bitte einmal im Browser einloggen und es erneut versuchen - oder die Browser-Cookies verwenden.",
+      "two_factor": "Fuer dieses Konto ist die Zwei-Faktor-Anmeldung aktiv. Bitte die Browser-Cookies verwenden.",
+      "cannot_connect": "Verbindung zu FusionSolar fehlgeschlagen.",
+      "no_stations": "Im Konto wurde keine Anlage gefunden.",
+      "unknown": "Unerwarteter Fehler, Details im Log."
+    },
+    "abort": {
+      "already_configured": "Diese Anlage ist bereits eingerichtet.",
+      "reauth_successful": "Anmeldung erfolgreich erneuert."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Optionen",
+        "description": "Die Geraete laden nur alle 5 Minuten in die Cloud hoch. Kuerzere Intervalle liefern keine neuen Werte.",
+        "data": {
+          "scan_interval": "Abfrageintervall (Sekunden)"
+        }
+      }
+    }
+  }
+}

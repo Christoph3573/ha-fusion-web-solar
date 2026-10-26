@@ -1,0 +1,62 @@
+{
+  "config": {
+    "flow_title": "Fusion Web Solar",
+    "step": {
+      "user": {
+        "title": "Set up Fusion Web Solar",
+        "description": "How should the integration sign in to the FusionSolar web portal?",
+        "menu_options": {
+          "password": "With email and password",
+          "cookies": "With browser cookies"
+        }
+      },
+      "password": {
+        "title": "Sign in",
+        "description": "Credentials of your FusionSolar account.",
+        "data": {
+          "base_url": "Server URL",
+          "email": "Email",
+          "password": "Password"
+        }
+      },
+      "cookies": {
+        "title": "Browser cookies",
+        "description": "Cookie header from your browser developer tools (F12 -> Network -> request to fusionsolar.huawei.com). Cookies expire after a few hours.",
+        "data": {
+          "base_url": "Server URL",
+          "cookies": "Cookies"
+        }
+      },
+      "station": {
+        "title": "Select plant",
+        "description": "The account contains more than one plant.",
+        "data": {
+          "station_dn": "Plant"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Sign-in failed. Please check your credentials or cookies.",
+      "captcha_required": "FusionSolar asks for a security code. Sign in once in a browser and retry, or use browser cookies.",
+      "two_factor": "Two-factor authentication is enabled for this account. Please use browser cookies.",
+      "cannot_connect": "Could not connect to FusionSolar.",
+      "no_stations": "No plant found in this account.",
+      "unknown": "Unexpected error, see the log for details."
+    },
+    "abort": {
+      "already_configured": "This plant is already configured.",
+      "reauth_successful": "Re-authentication successful."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Options",
+        "description": "Devices upload to the cloud every 5 minutes. Shorter intervals do not produce new values.",
+        "data": {
+          "scan_interval": "Update interval (seconds)"
+        }
+      }
+    }
+  }
+}

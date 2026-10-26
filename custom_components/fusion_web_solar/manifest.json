@@ -1,0 +1,14 @@
+{
+  "domain": "fusion_web_solar",
+  "name": "Fusion Web Solar",
+  "version": "0.1.0",
+  "documentation": "https://github.com/Christoph3573/ha-fusion-web-solar",
+  "issue_tracker": "https://github.com/Christoph3573/ha-fusion-web-solar/issues",
+  "codeowners": ["@Christoph3573"],
+  "config_flow": true,
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "requirements": ["cryptography"],
+  "dependencies": [],
+  "loggers": ["custom_components.fusion_web_solar"]
+}
